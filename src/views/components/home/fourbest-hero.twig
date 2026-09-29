@@ -1,0 +1,11 @@
+<section component-id="{{ componentId }}" class="fourbest-hero" aria-labelledby="fourbest-hero-title">
+  <div class="container fourbest-hero__inner">
+    <div class="fourbest-hero__copy">
+      <span class="fourbest-eyebrow">4BEST STORE · ONLY FOR THE BEST</span>
+      <h1 id="fourbest-hero-title">{{ component.heading ?: 'تجربة ترفيه تبدأ من هنا' }}</h1>
+      <p>{{ component.description ?: 'تصفح خيارات المتجر من الاشتراكات والتفعيل والأجهزة، واختر ما يناسبك بخطوات سهلة.' }}</p>
+      {% if component.button_url %}<a class="fourbest-button" href="{{ component.button_url }}">{{ component.button_label ?: 'تصفح المنتجات' }} <span aria-hidden="true">←</span></a>{% endif %}
+    </div>
+    <div class="fourbest-hero__art" aria-hidden="true"><span class="fourbest-orbit"></span><span class="fourbest-screen"><span class="fourbest-screen__glow">4<span>BEST</span></span><small>STREAM • EXPLORE • ENJOY</small></span></div>
+  </div>
+</section>

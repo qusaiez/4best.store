@@ -1,0 +1,9 @@
+<section component-id="{{ componentId }}" class="fourbest-section" aria-labelledby="fourbest-categories-title">
+  <div class="container"><div class="fourbest-section__heading"><span class="fourbest-eyebrow">اكتشف الخيارات</span><h2 id="fourbest-categories-title">{{ component.heading ?: 'تسوق حسب احتياجك' }}</h2></div>
+    <div class="fourbest-categories">
+      {% if component.iptv_url %}<a class="fourbest-category" href="{{ component.iptv_url }}"><span class="fourbest-category__icon" aria-hidden="true">▣</span><strong>اشتراكات IPTV</strong><small>استعرض الاشتراكات المتاحة</small><b aria-hidden="true">←</b></a>{% endif %}
+      {% if component.smarters_url %}<a class="fourbest-category" href="{{ component.smarters_url }}"><span class="fourbest-category__icon" aria-hidden="true">◈</span><strong>تفعيل IPTV Smarters</strong><small>تفعيل التطبيق فقط، دون اشتراك</small><b aria-hidden="true">←</b></a>{% endif %}
+      {% if component.devices_url %}<a class="fourbest-category" href="{{ component.devices_url }}"><span class="fourbest-category__icon" aria-hidden="true">▤</span><strong>أجهزة TV Box</strong><small>تصفح الأجهزة المتوفرة</small><b aria-hidden="true">←</b></a>{% endif %}
+    </div>
+  </div>
+</section>
